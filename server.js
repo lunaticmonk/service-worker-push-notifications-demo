@@ -19,6 +19,12 @@ app.get('/', function(req, res) {
 	res.render('index');
 });
 
+app.all('/', function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  next();
+ });
+
 app.post('/', function(req, res) {
 	console.log(req.body.endpoint);
 	let newSubscription = new user({
