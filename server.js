@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 const ejs = require('ejs');
 const user = require('./models/user');
 const app = express();
+const cors = require('express-cors');
 mongoose.connect('mongodb://sumedh:sumedh@ds147480.mlab.com:47480/pushservice');
 
 app.use(cors({
