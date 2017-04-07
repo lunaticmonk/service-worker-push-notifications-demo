@@ -11,7 +11,7 @@ const cors = require('express-cors');
 mongoose.connect('mongodb://sumedh:sumedh@ds147480.mlab.com:47480/pushservice');
 
 app.use(cors({
-	allowedOrigins : ['https://pushservicee.herokuapp.com']
+	allowedOrigins : ['https://pushservicee.herokuapp.com', 'mongodb://sumedh:sumedh@ds147480.mlab.com:47480/pushservice', 'https://fcm.googleapis.com/fcm/send']
 }));
 
 app.use(express.static(__dirname + '/public'));
