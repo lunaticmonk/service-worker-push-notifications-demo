@@ -61,6 +61,7 @@ app.get('/sendNotification', function(req, res) {
 
 		});
 	});
+	res.send('All notifications sent successfully.');
 });
 
 app.listen(PORT);
