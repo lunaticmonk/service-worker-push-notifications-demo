@@ -9,11 +9,13 @@ const user = require('./models/user');
 const app = express();
 mongoose.connect('mongodb://sumedh:sumedh@ds147480.mlab.com:47480/pushservice');
 
-app.all('/', function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "X-Requested-With");
-  next();
- });
+app.all('*', function(req, res, next) {
+     var origin = req.get('origin'); 
+     res.header('Access-Control-Allow-Origin', origin);
+     res.header("Access-Control-Allow-Headers", "X-Requested-With");
+     res.header('Access-Control-Allow-Headers', 'Content-Type');
+     next();
+});
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyparser.urlencoded({ extended : true }));
