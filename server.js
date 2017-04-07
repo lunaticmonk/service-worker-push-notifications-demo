@@ -9,17 +9,16 @@ const user = require('./models/user');
 const app = express();
 mongoose.connect('mongodb://sumedh:sumedh@ds147480.mlab.com:47480/pushservice');
 
-app.use(express.static(__dirname + '/public'));
-app.use(bodyparser.urlencoded({ extended : true }));
-app.set('view engine', 'ejs');
-const PORT = process.env.PORT || 5000;
-
 app.all('/', function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
   next();
  });
 
+app.use(express.static(__dirname + '/public'));
+app.use(bodyparser.urlencoded({ extended : true }));
+app.set('view engine', 'ejs');
+const PORT = process.env.PORT || 5000;
 
 app.get('/', function(req, res) {
 	res.render('index');
