@@ -1,19 +1,17 @@
 'use strict';
 
 const express = require('express');
+const app = express();
+const sslRedirect = require('heroku-ssl-redirect');
 const request = require('request');
 const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
 const ejs = require('ejs');
 const user = require('./models/user');
-const app = express();
-// const cors = require('express-cors');
 mongoose.connect('mongodb://sumedh:sumedh@ds147480.mlab.com:47480/pushservice');
 
-// app.use(cors({
-// 	allowedOrigins : ['https://pushservicee.herokuapp.com', 'mongodb://sumedh:sumedh@ds147480.mlab.com:47480/pushservice', 'https://fcm.googleapis.com/fcm/send']
-// }));
 
+app.use(sslRedirect());
 app.use(express.static(__dirname + '/public'));
 app.use(bodyparser.urlencoded({ extended : true }));
 app.set('view engine', 'ejs');
