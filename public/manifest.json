@@ -2,7 +2,7 @@
   "name": "GDG NIT Surat",  
   "short_name": "GDG",  
   "icons": [{  
-        "src": "./gdg.png",  
+        "src": "./gg.png",  
         "sizes": "200x200",
         "type": "image/png"
       }],  

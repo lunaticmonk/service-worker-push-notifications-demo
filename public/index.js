@@ -80,11 +80,11 @@ function subscribeUser() {
 
 function updateSubscriptionOnServer(subscription) {
 // TODO: Send subscription to application server
-  console.log('Updating subscription : ', subscription);
-  let subscriptionfield = document.querySelector('#subscription');
-  console.log(subscriptionfield);
-  subscriptionfield.innerHTML = JSON.stringify(subscription);
-  showCurlCommand(subscription);
+  // console.log('Updating subscription : ', subscription);
+  // let subscriptionfield = document.querySelector('#subscription');
+  // console.log(subscriptionfield);
+  // subscriptionfield.innerHTML = JSON.stringify(subscription);
+  // showCurlCommand(subscription);
 
   let xhr = new XMLHttpRequest();
   xhr.open('POST', '/', true);
