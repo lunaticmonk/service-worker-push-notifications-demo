@@ -14,7 +14,7 @@ self.addEventListener('push', function(event) {
 	// let clickurl = payload.url;
 
 	let title = 'GDG NIT Surat';  
-  	let body = 'Git and Github';  
+  	let body = 'Welcome! You ll be notified about all the events by this medium.';  
   	let icon = './gg.png';  
   	let tag = 'simple-push-demo-notification-tag';
 
