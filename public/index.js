@@ -132,22 +132,3 @@ function urlB64ToUint8Array(base64String) {
   }
   return outputArray;
 }
-
-// function send_Notification(subscription) { 
-  // let sendbtn = document.querySelector('#sendbtn');
-  // sendbtn.addEventListener('click', function() {
-  //   console.log('click');
-  //   var xhttp = new XMLHttpRequest();
-  //   xhttp.onreadystatechange = function(response)  {
-  //     console.log(response);
-  //   }
-  //   xhttp.open('POST', '/sendNotification', false);
-  //   xhttp.send(JSON.stringify(subscription));
-  // });
-// }
-
-// function updateSubscriptionOnServer(subscription) {
-//   let xhr = new XMLHttpRequest();
-//   xhr.open('POST', '/', true);
-//   xhr.send(JSON.stringify(subscription));
-// }

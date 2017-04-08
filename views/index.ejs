@@ -4,12 +4,23 @@
 	<title>Service Workers</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="manifest" href="./manifest.json">
+	<style type="text/css">
+		.panel {
+			background-color : #D1F2EB;
+		}
+
+		.panel button {
+			display : block;
+			margin : 0 auto;
+			margin-top : 20%;
+		}
+	</style>
 </head>
-<body class = "container">
-	<div class = "">
-		<button id = "pushbtn" class = "btn btn-primary">Enable push.</button>
-		<p id = "subscription"></p>
-		<p id = "curlcommand"></p>
+<body class = "panel">
+	<div>
+		<button id = "pushbtn" class = "btn btn-default">Enable push.</button>
+		<!-- <p id = "subscription"></p> -->
+		<!-- <p id = "curlcommand"></p> -->
 	</div>
 <script type="text/javascript" src = "./index.js"></script>
 </body>

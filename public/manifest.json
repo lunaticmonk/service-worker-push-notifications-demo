@@ -3,7 +3,7 @@
   "short_name": "GDG",  
   "icons": [{  
         "src": "./gg.png",  
-        "sizes": "200x200",
+        "sizes": ["200x200", "156x200"],
         "type": "image/png"
       }],  
   "display": "standalone",  
