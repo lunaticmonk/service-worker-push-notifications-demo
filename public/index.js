@@ -2,7 +2,7 @@
 
 // const API_KEY = window.GoogleSamples.Config.gcmAPIKey;
 const pushButton = document.querySelector('#pushbtn');
-const applicationServerPublicKey = 'BFkrVe14JxJfVEAUmvLNqD44J9FRPYLSdzYmTLWyJ1h061VHLBZc3Bnvi0IO9YEON5Ur8z-T6LiHeC6lJaeVNoI';
+const applicationServerPublicKey = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 let swRegistration;
 let isSubscribed = false;
 
@@ -107,7 +107,7 @@ function showCurlCommand(subscription) {
   let mergedEndpoint = String(subscription.endpoint);
   let curlfield = document.querySelector('#curlcommand');
   let GCM_ENDPOINT = 'https://fcm.googleapis.com/fcm/send';
-  let API_KEY = 'AIzaSyDWNKAoi6RDVYaTPKHTCx0o_1HCvI1oeGI';
+  let API_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxxxx';
   let endpointSections = mergedEndpoint.split('/');
   let subscriptionId = endpointSections[endpointSections.length - 1];
 

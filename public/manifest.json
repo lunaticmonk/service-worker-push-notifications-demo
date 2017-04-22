@@ -7,6 +7,6 @@
         "type": "image/png"
       }],  
   "display": "standalone",  
-  "gcm_sender_id": "970536433802",
+  "gcm_sender_id": "xxxxxxxxxxxxxxxxxxxxxx",
   "permissions": ["gcm", "storage", "notifications"]
 }
